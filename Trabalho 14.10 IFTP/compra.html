@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra - Power Suplementos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1>POWER SUPLEMENTOS</h1>
+
+    <h2>Finalizar Compra</h2>
+
+    <form id="formCompra">
+
+        <label>Produto escolhido:</label>
+        <input type="text" id="produtoEscolhido" readonly>
+
+        <label>Quantidade:</label>
+        <input type="number" id="quantidade" min="1" value="1" required>
+
+        <label>Endereço de entrega:</label>
+        <input type="text" id="endereco" placeholder="Digite seu endereço" required>
+
+        <label>Forma de pagamento:</label>
+        <select id="pagamento" required>
+            <option value="">Selecione</option>
+            <option>Pix</option>
+            <option>Cartão de crédito</option>
+            <option>Cartão de débito</option>
+            <option>Dinheiro</option>
+        </select>
+
+        <button type="submit">Finalizar Compra</button>
+
+    </form>
+
+    <br>
+
+    <a href="index.html">Voltar para a loja</a>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
